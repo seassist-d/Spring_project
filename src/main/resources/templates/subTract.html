@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thyeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>引き算</title>
+</head>
+<body>
+	<h1>引き算</h1>
+	<form action="subTract" method="post">
+		<input type="number" name="numFirst">-
+		<input type="number" name="numSeccond">
+		<button type="submit">=</button>
+	</form>
+	<p th:text=${result}></p>
+</body>
+</html>
