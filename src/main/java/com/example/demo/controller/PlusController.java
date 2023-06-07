@@ -17,7 +17,7 @@ public class PlusController {
 	}
 	
 	@GetMapping("plus")
-	public String plus(Model model) {
+	public String doGet(Model model) {
 		String result = "";
 		
 		result = String.valueOf(plusService.plus(5, 6));

@@ -19,12 +19,12 @@ public class SubtractController {
 	}
 	
 	@GetMapping("subTract")
-	public String subtract(Model model) {
+	public String doGet(Model model) {
 		return "subTract.html";
 	}
 	
 	@PostMapping("subTract")
-	public String subtract(@RequestParam("numFirst") int numFirst, @RequestParam("numSeccond") int numSeccond, Model model) {
+	public String doPost(@RequestParam("numFirst") int numFirst, @RequestParam("numSeccond") int numSeccond, Model model) {
 		int result = subtractService.subtract(numFirst, numSeccond);
 		
 		model.addAttribute("result", result);

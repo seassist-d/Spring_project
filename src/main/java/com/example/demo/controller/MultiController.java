@@ -17,7 +17,7 @@ public class MultiController {
 	}
 	
 	@GetMapping("multi")
-	public String multi(Model model) {
+	public String doGet(Model model) {
 		int result = multiService.multi(5, 6);
 		
 		model.addAttribute("result", result);

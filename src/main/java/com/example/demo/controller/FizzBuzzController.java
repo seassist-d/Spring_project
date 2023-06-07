@@ -19,7 +19,7 @@ public class FizzBuzzController {
 	}
 	
 	@GetMapping("fizzBuzz")
-	public String fizzBuzz(Model model) {
+	public String doGet(Model model) {
 		List<String> fizzBuzzList = fizzBuzzService.getFizzBuzz();
 		
 		model.addAttribute("fizzBuzzList", fizzBuzzList);
