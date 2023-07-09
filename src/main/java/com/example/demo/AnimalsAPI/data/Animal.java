@@ -18,5 +18,4 @@ public class Animal {
 
 	@JsonProperty("cry")
 	private String cry;
-
 }
