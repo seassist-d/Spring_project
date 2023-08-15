@@ -18,7 +18,6 @@ public class FizzBuzzService {
 			} else if (i % 5 == 0) {
 				fizzBuzzList.add("Buzz");
 			} else {
-				System.out.println(i);
 				fizzBuzzList.add(String.valueOf(i));
 			}
 		}
